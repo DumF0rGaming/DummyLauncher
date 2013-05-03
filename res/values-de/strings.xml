@@ -2,10 +2,10 @@
 
     <string name="app_name">Dummy Launcher</string>
     <string name="action_settings">Einstellungen</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Hallo Welt!</string>
     <string name="title_about">Dummy Launcher</string>
 
-	<string name="error_launch_app">Unable to launch this App</string>
+	<string name="error_launch_app">Starten der App nicht möglich</string>
    
 	<string name="launcher_welcome">Willkommen bei Android</string>
 	<string name="launcher_search">Suche bei Google</string>
