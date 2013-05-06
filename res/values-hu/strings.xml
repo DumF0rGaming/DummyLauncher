@@ -4,28 +4,28 @@
     <string name="app_name">Dummy Launcher</string>
     <string name="action_settings">Beállítások</string>
     <string name="hello_world">Hello Világ!</string>
-    <string name="title_about">Az alkalmazás indítása nem lehetséges Üdv az Android-ban Google Keresés Alap alkalmazások Google alkalmazások Minden alkalmazás Közösségi Játékok Minden alkalmazás Dummy Launcher az XDA-n Küldj visszajelzést, vagy jelentsd a hibákat a hivatalos topikban. Forráskód a GitHub-on Fejleszd te magad az alkalmazást, vagy segíts a fordításban. Adomány PayPal-on keresztül A PayPal adományok nem járnak semmilyen előnnyel, csak elősegítik a fejlesztést. Az alkalmazás ingyenes marad. Beállítások Alapértelmezések törlése Töröld az alapértelmezést, hogy visszatérhess az előző/gyári launcher-hez.</string>
+    <string name="title_about">Dummy Launcher</string>
 
-	<string name="error_launch_app">Unable to launch this App</string>
+	<string name="error_launch_app">Az alkalmazás indítása nem lehetséges</string>
    
-	<string name="launcher_welcome">Welcome to Android</string>
-	<string name="launcher_search">Search on Google</string>
-	<string name="launcher_common">Common Apps</string>
-	<string name="launcher_google_apps">Google Apps</string>
-	<string name="launcher_all_apps">All your Apps</string>
-	<string name="launcher_comm">Communication</string>
-	<string name="launcher_games">Games</string>
+	<string name="launcher_welcome">Üdvözöljük az Android</string>
+	<string name="launcher_search">Google Keresés</string>
+	<string name="launcher_common">Alap alkalmazások</string>
+	<string name="launcher_google_apps">Google alkalmazások</string>
+	<string name="launcher_all_apps">Minden alkalmazás</string>
+	<string name="launcher_comm">Közösségi</string>
+	<string name="launcher_games">Játékok </string>
 	
-	<string name="applauncher_all">All your Apps</string>
+	<string name="applauncher_all">Minden alkalmazás</string>
 	
-    <string name="xda">Dummy Launcher at XDA</string>
-    <string name="xda_summary">Give Feedback and report bugs at the official topic.</string>
-    <string name="github">Open Source at GitHub</string>
-    <string name="github_summary">You can code a new feature or translate the app.</string>
-    <string name="paypal">Donations via Paypal</string>
-    <string name="paypal_summary">PayPal donations do not grant any updates or improvements, they just support the work of the developer. App will remain free without donating.</string>
-    <string name="settings_title">Settings</string>
-    <string name="settings_defaults_title">Clear App defaults</string>
-    <string name="settings_defaults_summary">Reset the HOME button to go back to your old launcher.</string>
+    <string name="xda">Dummy Launcher az XDA-n</string>
+    <string name="xda_summary">Küldj visszajelzést, vagy jelentsd a hibákat a hivatalos topikban.</string>
+    <string name="github">Forráskód a GitHub-on</string>
+    <string name="github_summary">Fejleszd te magad az alkalmazást, vagy segíts a fordításban.</string>
+    <string name="paypal">Adomány PayPal-on keresztül</string>
+    <string name="paypal_summary">A PayPal adományok nem járnak semmilyen előnnyel, csak elősegítik a fejlesztést. Az alkalmazás ingyenes marad.</string>
+    <string name="settings_title">Beállítások</string>
+    <string name="settings_defaults_title">Alapértelmezések törlése</string>
+    <string name="settings_defaults_summary"> Töröld az alapértelmezést, hogy visszatérhess az előző/gyári launcher-hez.</string>
 </resources>
 
