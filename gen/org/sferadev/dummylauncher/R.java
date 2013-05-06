@@ -10,6 +10,14 @@ package org.sferadev.dummylauncher;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int Blue=0x7f050005;
+        public static final int Green=0x7f050004;
+        public static final int InvertedBlack=0x7f050003;
+        public static final int InvertedBlue=0x7f050002;
+        public static final int Orange=0x7f050001;
+        public static final int Red=0x7f050000;
+    }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
 
@@ -17,8 +25,8 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_vertical_margin=0x7f060001;
     }
     public static final class drawable {
         public static final int github=0x7f020000;
@@ -30,59 +38,70 @@ public final class R {
         public static final int xda=0x7f020006;
     }
     public static final class id {
-        public static final int HorizontalScrollView01=0x7f090011;
-        public static final int HorizontalScrollView02=0x7f09001c;
-        public static final int TextView01=0x7f090010;
-        public static final int TextView02=0x7f09001b;
-        public static final int about=0x7f090034;
-        public static final int applauncher_linearlayout=0x7f09002e;
-        public static final int applauncherrow_appname=0x7f090033;
-        public static final int applauncherrow_icon=0x7f090031;
-        public static final int applauncherrow_imagelinearlayout=0x7f090030;
-        public static final int applauncherrow_namelinearlayout=0x7f090032;
-        public static final int bAll=0x7f09002d;
-        public static final int bAngry=0x7f090020;
-        public static final int bAngryRio=0x7f090022;
-        public static final int bAngrySW=0x7f090021;
-        public static final int bApalabrados=0x7f09001f;
-        public static final int bBike=0x7f090025;
-        public static final int bBrowser=0x7f090006;
-        public static final int bCalendar=0x7f090007;
-        public static final int bContacts=0x7f090005;
-        public static final int bCurrents=0x7f09000f;
-        public static final int bCut1=0x7f090023;
-        public static final int bDraw=0x7f09002a;
-        public static final int bDrive=0x7f09000e;
-        public static final int bFacebook=0x7f090016;
-        public static final int bFloor=0x7f090024;
-        public static final int bGmail=0x7f09000a;
-        public static final int bIngress=0x7f09002c;
-        public static final int bInstagram=0x7f090018;
-        public static final int bIron=0x7f090026;
-        public static final int bKeep=0x7f09000c;
-        public static final int bLine=0x7f090013;
-        public static final int bMaps=0x7f09000d;
-        public static final int bMinecraft=0x7f090029;
-        public static final int bPhone=0x7f090004;
-        public static final int bPlay=0x7f09000b;
-        public static final int bPou=0x7f09001e;
-        public static final int bSearch=0x7f090002;
-        public static final int bSkype=0x7f090015;
-        public static final int bTapatalk=0x7f09001a;
-        public static final int bTemple1=0x7f090027;
-        public static final int bTemple2=0x7f090028;
-        public static final int bTriviados=0x7f09001d;
-        public static final int bTuenti=0x7f090019;
-        public static final int bTwitter=0x7f090017;
-        public static final int bViber=0x7f090014;
-        public static final int bWhatsApp=0x7f090012;
-        public static final int bWordCrack=0x7f09002b;
-        public static final int cycle=0x7f09002f;
-        public static final int horizontalScrollView1=0x7f090009;
-        public static final int scrollView1=0x7f090000;
-        public static final int textView1=0x7f090001;
-        public static final int textView2=0x7f090003;
-        public static final int textView3=0x7f090008;
+        public static final int HorizontalScrollView01=0x7f0a0015;
+        public static final int HorizontalScrollView02=0x7f0a0021;
+        public static final int LinearTheme0=0x7f0a0002;
+        public static final int LinearTheme1=0x7f0a0004;
+        public static final int LinearTheme2=0x7f0a000a;
+        public static final int LinearTheme3=0x7f0a0013;
+        public static final int LinearTheme4=0x7f0a001f;
+        public static final int LinearTheme5=0x7f0a0033;
+        public static final int LinearTheme6=0x7f0a0036;
+        public static final int LinearTheme7=0x7f0a0039;
+        public static final int LinearTheme8=0x7f0a003a;
+        public static final int ScrollTheme1=0x7f0a0000;
+        public static final int TextView01=0x7f0a0014;
+        public static final int TextView02=0x7f0a0020;
+        public static final int about=0x7f0a003f;
+        public static final int applauncher_linearlayout=0x7f0a0038;
+        public static final int applauncherrow_appname=0x7f0a003d;
+        public static final int applauncherrow_icon=0x7f0a003b;
+        public static final int applauncherrow_imagelinearlayout=0x7f0a003e;
+        public static final int applauncherrow_namelinearlayout=0x7f0a003c;
+        public static final int bAll=0x7f0a0034;
+        public static final int bAngry=0x7f0a0025;
+        public static final int bAngryRio=0x7f0a0027;
+        public static final int bAngrySW=0x7f0a0026;
+        public static final int bApalabrados=0x7f0a0024;
+        public static final int bBike=0x7f0a002a;
+        public static final int bBrowser=0x7f0a0008;
+        public static final int bCalendar=0x7f0a0009;
+        public static final int bContacts=0x7f0a0007;
+        public static final int bCurrents=0x7f0a0012;
+        public static final int bCut1=0x7f0a0028;
+        public static final int bDraw=0x7f0a002f;
+        public static final int bDrive=0x7f0a0011;
+        public static final int bFacebook=0x7f0a001a;
+        public static final int bFloor=0x7f0a0029;
+        public static final int bGmail=0x7f0a000d;
+        public static final int bIngress=0x7f0a0031;
+        public static final int bInstagram=0x7f0a001c;
+        public static final int bIron=0x7f0a002b;
+        public static final int bKeep=0x7f0a000f;
+        public static final int bKoM=0x7f0a0032;
+        public static final int bLine=0x7f0a0017;
+        public static final int bMaps=0x7f0a0010;
+        public static final int bMinecraft=0x7f0a002e;
+        public static final int bPhone=0x7f0a0006;
+        public static final int bPlay=0x7f0a000e;
+        public static final int bPou=0x7f0a0023;
+        public static final int bSearch=0x7f0a0003;
+        public static final int bSkype=0x7f0a0019;
+        public static final int bTapatalk=0x7f0a001e;
+        public static final int bTemple1=0x7f0a002c;
+        public static final int bTemple2=0x7f0a002d;
+        public static final int bTriviados=0x7f0a0022;
+        public static final int bTuenti=0x7f0a001d;
+        public static final int bTwitter=0x7f0a001b;
+        public static final int bViber=0x7f0a0018;
+        public static final int bWhatsApp=0x7f0a0016;
+        public static final int bWordCrack=0x7f0a0030;
+        public static final int cycle=0x7f0a0037;
+        public static final int horizontalScrollView1=0x7f0a000c;
+        public static final int scrollView1=0x7f0a0035;
+        public static final int textView1=0x7f0a0001;
+        public static final int textView2=0x7f0a0005;
+        public static final int textView3=0x7f0a000b;
     }
     public static final class layout {
         public static final int activity_launcher=0x7f030000;
@@ -90,35 +109,36 @@ public final class R {
         public static final int applauncherrow=0x7f030002;
     }
     public static final class menu {
-        public static final int launcher=0x7f080000;
+        public static final int launcher=0x7f090000;
     }
     public static final class string {
-        public static final int Instellingen_defaults_summary=0x7f060019;
-        public static final int Instellingen_defaults_title=0x7f060018;
-        public static final int Instellingen_title=0x7f060017;
-        public static final int action_Instellingen=0x7f060016;
-        public static final int action_settings=0x7f060001;
-        public static final int app_name=0x7f060000;
-        public static final int applauncher_all=0x7f06000c;
-        public static final int error_launch_app=0x7f060004;
-        public static final int github=0x7f06000f;
-        public static final int github_summary=0x7f060010;
-        public static final int hello_world=0x7f060002;
-        public static final int launcher_all_apps=0x7f060009;
-        public static final int launcher_comm=0x7f06000a;
-        public static final int launcher_common=0x7f060007;
-        public static final int launcher_games=0x7f06000b;
-        public static final int launcher_google_apps=0x7f060008;
-        public static final int launcher_search=0x7f060006;
-        public static final int launcher_welcome=0x7f060005;
-        public static final int paypal=0x7f060011;
-        public static final int paypal_summary=0x7f060012;
-        public static final int settings_defaults_summary=0x7f060015;
-        public static final int settings_defaults_title=0x7f060014;
-        public static final int settings_title=0x7f060013;
-        public static final int title_about=0x7f060003;
-        public static final int xda=0x7f06000d;
-        public static final int xda_summary=0x7f06000e;
+        public static final int Instellingen_defaults_summary=0x7f07001a;
+        public static final int Instellingen_defaults_title=0x7f070019;
+        public static final int Instellingen_title=0x7f070018;
+        public static final int action_Instellingen=0x7f070017;
+        public static final int action_settings=0x7f070001;
+        public static final int app_name=0x7f070000;
+        public static final int applauncher_all=0x7f07000d;
+        public static final int error_launch_app=0x7f070004;
+        public static final int error_more_themes=0x7f070005;
+        public static final int github=0x7f070010;
+        public static final int github_summary=0x7f070011;
+        public static final int hello_world=0x7f070002;
+        public static final int launcher_all_apps=0x7f07000a;
+        public static final int launcher_comm=0x7f07000b;
+        public static final int launcher_common=0x7f070008;
+        public static final int launcher_games=0x7f07000c;
+        public static final int launcher_google_apps=0x7f070009;
+        public static final int launcher_search=0x7f070007;
+        public static final int launcher_welcome=0x7f070006;
+        public static final int paypal=0x7f070012;
+        public static final int paypal_summary=0x7f070013;
+        public static final int settings_defaults_summary=0x7f070016;
+        public static final int settings_defaults_title=0x7f070015;
+        public static final int settings_title=0x7f070014;
+        public static final int title_about=0x7f070003;
+        public static final int xda=0x7f07000e;
+        public static final int xda_summary=0x7f07000f;
     }
     public static final class style {
         /** 
@@ -142,11 +162,11 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f080001;
     }
     public static final class xml {
         public static final int about=0x7f040000;

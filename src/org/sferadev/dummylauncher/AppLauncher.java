@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,8 +21,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
  
@@ -61,6 +64,16 @@ public class AppLauncher extends ListActivity{
 	ArrayList<AppInfo> packageList = null;
 	Applications myApps = null;
 	
+	String BlueTheme = "org.sferadev.theme.dummylauncher.blue";
+	String GreyTheme = "org.sferadev.theme.dummylauncher.grey";
+	String GreenTheme = "org.sferadev.theme.dummylauncher.green";
+	
+	int num;
+	
+	LinearLayout LinearTheme6;
+	LinearLayout LinearTheme7;
+	LinearLayout LinearTheme8;
+	
 	ProgressBar cycle;
  
 	public void onCreate(Bundle savedInstanceState){
@@ -80,6 +93,8 @@ public class AppLauncher extends ListActivity{
 			}
 		};
  
+		//ThemeApp();
+		
 		Thread appLoaderThread = new Thread(null, viewApps, 
 				"AppLoaderThread");
 		appLoaderThread.start();
@@ -88,6 +103,52 @@ public class AppLauncher extends ListActivity{
 				//"Hold on...", "Loading your apps...", true);
 		
 	}
+	
+	/* WIP
+	public void ThemeApp(){
+		//Perform a change if the Theme it's installed
+    	
+    	LinearTheme6 = (LinearLayout) findViewById(R.id.LinearTheme6);
+    	LinearTheme7 = (LinearLayout) findViewById(R.id.LinearTheme7);
+    	LinearTheme8 = (LinearLayout) findViewById(R.id.LinearTheme8);
+    	
+    	if(isAppInstalled(BlueTheme)){
+    		LinearTheme6.setBackgroundColor(Color.parseColor("#0B7BD2"));
+    		LinearTheme7.setBackgroundColor(Color.parseColor("#0B7BD2"));
+    		
+    		LinearTheme8.setBackgroundColor(Color.parseColor("#38B4B9"));
+    		num++;
+        }
+    	
+    	if(isAppInstalled(GreyTheme)){
+    		LinearTheme6.setBackgroundColor(Color.parseColor("#313131"));
+    		LinearTheme7.setBackgroundColor(Color.parseColor("#313131"));
+    		
+    		LinearTheme8.setBackgroundColor(Color.parseColor("#95918A"));
+    		num++;
+        }
+    	
+    	if(isAppInstalled(GreenTheme)){
+    		LinearTheme6.setBackgroundColor(Color.parseColor("#669900"));
+    		LinearTheme7.setBackgroundColor(Color.parseColor("#669900"));
+    		
+    		LinearTheme8.setBackgroundColor(Color.parseColor("#ffb2cb39"));
+    		num++;
+        }
+	}
+	
+	private boolean isAppInstalled(String uri) {
+    	PackageManager pm = getPackageManager();
+    	boolean installed = true;
+    	try {
+    	pm.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
+    	installed = true;
+    	} catch (PackageManager.NameNotFoundException e) {
+    	installed = false;
+    	}
+    	return installed;
+    	}
+    	*/
 	
 	@Override
 	public void onBackPressed() {

@@ -1,0 +1,9 @@
+
+    <resources>
+        <color name="Red">#ffc74b46</color>
+        <color name="Orange">#fff4842d</color>
+        <color name="InvertedBlue">#FF33B5E5</color>
+        <color name="InvertedBlack">#000000</color>
+        <color name="Green">#ffb2cb39</color>
+        <color name="Blue">#ff3f9fe0</color>
+    </resources>

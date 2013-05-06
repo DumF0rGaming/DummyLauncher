@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearTheme7"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:background="#ffc74b46"
     android:orientation="vertical" >
 
     <LinearLayout
-        android:id="@+id/applauncherrow_imagelinearlayout"
+        android:id="@+id/LinearTheme8"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/listPreferredItemHeight"
         android:layout_margin="10dp"

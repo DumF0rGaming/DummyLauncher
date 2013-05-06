@@ -4,7 +4,7 @@
     android:layout_height="fill_parent" >
 
     <ScrollView
-        android:id="@+id/scrollView1"
+        android:id="@+id/ScrollTheme1"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="#ffc74b46" >
@@ -34,6 +34,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/LinearTheme0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -53,6 +54,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/LinearTheme1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -111,6 +113,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/LinearTheme2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -189,6 +192,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/LinearTheme3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -284,6 +288,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/LinearTheme4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -423,12 +428,20 @@
                             android:layout_height="70dp"
                             android:layout_weight="1"
                             android:onClick="onIngress" />
+                        
+                        <ImageButton
+                            android:id="@+id/bKoM"
+                            android:layout_width="80dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:onClick="onKoM" />
                     </LinearLayout>
 
                 </HorizontalScrollView>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/LinearTheme5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"

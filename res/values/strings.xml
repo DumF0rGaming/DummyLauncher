@@ -7,6 +7,7 @@
     <string name="title_about">Dummy Launcher</string>
 
 	<string name="error_launch_app">Unable to launch this App</string>
+	<string name="error_more_themes">Detected more than one theme, selected one randomly. Uninstall the other themes.</string>
    
 	<string name="launcher_welcome">Welcome to Android</string>
 	<string name="launcher_search">Search on Google</string>

@@ -11,12 +11,15 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 public class LauncherActivity extends Activity {
@@ -60,6 +63,7 @@ public class LauncherActivity extends Activity {
 	ImageButton bDraw;
 	ImageButton bWordCrack;
 	ImageButton bIngress;
+	ImageButton bKoM;
 	
 	String sSearch = "com.google.android.googlequicksearchbox";
 	String sFirefox = "org.mozilla.firefox";
@@ -100,7 +104,21 @@ public class LauncherActivity extends Activity {
 	String sDraw = "com.omgpop.dstfree";
 	String sWordCrack = "com.etermax.wordcrack.lite";
 	String sIngress = "com.nianticproject.ingress";
+	String sKoM = "com.kabam.fortress";
+	
+	String BlueTheme = "org.sferadev.theme.dummylauncher.blue";
+	String GreyTheme = "org.sferadev.theme.dummylauncher.grey";
+	String GreenTheme = "org.sferadev.theme.dummylauncher.green";
+	
+	int num;
 
+	ScrollView ScrollTheme1;
+	LinearLayout LinearTheme0;
+	LinearLayout LinearTheme1;
+	LinearLayout LinearTheme2;
+	LinearLayout LinearTheme3;
+	LinearLayout LinearTheme4;
+	LinearLayout LinearTheme5;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,6 +128,62 @@ public class LauncherActivity extends Activity {
         getIcons();
         
         hideNotInstalledApps();
+        
+        checkThemes();
+    }
+    
+    public void checkThemes(){
+    	//Perform a change if the Theme it's installed
+    	
+    	ScrollTheme1 = (ScrollView) findViewById(R.id.ScrollTheme1);
+    	LinearTheme0 = (LinearLayout) findViewById(R.id.LinearTheme0);
+    	LinearTheme1 = (LinearLayout) findViewById(R.id.LinearTheme1);
+    	LinearTheme2 = (LinearLayout) findViewById(R.id.LinearTheme2);
+    	LinearTheme3 = (LinearLayout) findViewById(R.id.LinearTheme3);
+    	LinearTheme4 = (LinearLayout) findViewById(R.id.LinearTheme4);
+    	LinearTheme5 = (LinearLayout) findViewById(R.id.LinearTheme5);
+    	
+    	if(isAppInstalled(BlueTheme)){
+    		ScrollTheme1.setBackgroundColor(Color.parseColor("#0B7BD2"));
+    		
+    		LinearTheme0.setBackgroundColor(Color.parseColor("#38B4B9"));
+    		LinearTheme1.setBackgroundColor(Color.parseColor("#38B4B9"));
+    		LinearTheme2.setBackgroundColor(Color.parseColor("#38B4B9"));
+    		LinearTheme3.setBackgroundColor(Color.parseColor("#38B4B9"));
+    		LinearTheme4.setBackgroundColor(Color.parseColor("#38B4B9"));
+    		LinearTheme5.setBackgroundColor(Color.parseColor("#38B4B9"));
+    		num++;
+        }
+    	
+    	if(isAppInstalled(GreyTheme)){
+    		ScrollTheme1.setBackgroundColor(Color.parseColor("#313131"));
+    		
+    		LinearTheme0.setBackgroundColor(Color.parseColor("#95918A"));
+    		LinearTheme1.setBackgroundColor(Color.parseColor("#95918A"));
+    		LinearTheme2.setBackgroundColor(Color.parseColor("#95918A"));
+    		LinearTheme3.setBackgroundColor(Color.parseColor("#95918A"));
+    		LinearTheme4.setBackgroundColor(Color.parseColor("#95918A"));
+    		LinearTheme5.setBackgroundColor(Color.parseColor("#95918A"));
+    		num++;
+        }
+    	
+    	if(isAppInstalled(GreenTheme)){
+    		ScrollTheme1.setBackgroundColor(Color.parseColor("#669900"));
+    		
+    		LinearTheme0.setBackgroundColor(Color.parseColor("#ffb2cb39"));
+    		LinearTheme1.setBackgroundColor(Color.parseColor("#ffb2cb39"));
+    		LinearTheme2.setBackgroundColor(Color.parseColor("#ffb2cb39"));
+    		LinearTheme3.setBackgroundColor(Color.parseColor("#ffb2cb39"));
+    		LinearTheme4.setBackgroundColor(Color.parseColor("#ffb2cb39"));
+    		LinearTheme5.setBackgroundColor(Color.parseColor("#ffb2cb39"));
+    		num++;
+        }
+    	if(num>1){
+    		Context context = getApplicationContext();
+    		int duration = Toast.LENGTH_LONG;
+    		Toast toast = Toast.makeText(context, R.string.error_more_themes, duration);
+    		toast.show();
+    	}
     }
     
     public void hideNotInstalledApps(){
@@ -147,7 +221,8 @@ public class LauncherActivity extends Activity {
     	bMinecraft = (ImageButton) findViewById(R.id.bMinecraft);
     	bDraw = (ImageButton) findViewById(R.id.bDraw);
     	bWordCrack = (ImageButton) findViewById(R.id.bWordCrack);
-    	bIngress = (ImageButton) findViewById(R.id.bIngress);    	
+    	bIngress = (ImageButton) findViewById(R.id.bIngress);  
+    	bKoM = (ImageButton) findViewById(R.id.bKoM);  
     	
     	if(isNotAppInstalled(sSearch)){
     		bSearch.setVisibility(View.GONE);
@@ -244,6 +319,9 @@ public class LauncherActivity extends Activity {
         }
     	if(isNotAppInstalled(sIngress)){
     		bIngress.setVisibility(View.GONE);
+        }
+    	if(isNotAppInstalled(sKoM)){
+    		bKoM.setVisibility(View.GONE);
         }
     }
     
@@ -605,6 +683,17 @@ public class LauncherActivity extends Activity {
     		iIngress = getBaseContext().getPackageManager().getApplicationIcon(sIngress);    		
     		bIngress = (ImageButton) findViewById(R.id.bIngress);
     		bIngress.setImageDrawable(iIngress);
+    		}
+    		catch (PackageManager.NameNotFoundException ne)
+    		 {
+    	
+    		 }
+    	
+    	try{
+    		Drawable iKoM;
+    		iKoM = getBaseContext().getPackageManager().getApplicationIcon(sKoM);    		
+    		bKoM = (ImageButton) findViewById(R.id.bKoM);
+    		bKoM.setImageDrawable(iKoM);
     		}
     		catch (PackageManager.NameNotFoundException ne)
     		 {
@@ -976,6 +1065,14 @@ public class LauncherActivity extends Activity {
 		Intent i = new Intent();
 		PackageManager manager = getPackageManager();
 		i = manager.getLaunchIntentForPackage(sIngress);
+		i.addCategory(Intent.CATEGORY_LAUNCHER);
+		startActivity(i);
+		}
+	
+	public void onKoM(View v){
+		Intent i = new Intent();
+		PackageManager manager = getPackageManager();
+		i = manager.getLaunchIntentForPackage(sKoM);
 		i.addCategory(Intent.CATEGORY_LAUNCHER);
 		startActivity(i);
 		}
