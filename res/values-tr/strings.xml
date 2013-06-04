@@ -6,25 +6,26 @@
     <string name="hello_world">Merhaba dünya!</string>
     <string name="title_about">Dummy Launcher</string>
 
-	<string name="error_launch_app">Uygulama baþlatýlamýyor</string>
+	<string name="error_launch_app">Bu uygulama başlatılamıyor</string>
+	<string name="error_more_themes">Birden fazla tema tespit edildi, rastgele bir tema seçildi, diğer temaları kaldırın.</string>
    
-	<string name="launcher_welcome">Android\'e Hoþgeldiniz</string>
-	<string name="launcher_search">Google\'da Ara</string>
+	<string name="launcher_welcome">Android'e Hoşgeldiniz</string>
+	<string name="launcher_search">Google'da Ara</string>
 	<string name="launcher_common">Ortak Uygulamalar</string>
-	<string name="launcher_google_apps">Google Uygulamalarý</string>
+	<string name="launcher_google_apps">Google Uygulamaları</string>
 	<string name="launcher_all_apps">Tüm Uygulamalar</string>
-	<string name="launcher_comm">Ýletiþim</string>
+	<string name="launcher_comm">İletişim</string>
 	<string name="launcher_games">Oyunlar</string>
 	
-	<string name="applauncher_all">Tüm Uygulamalarýnýz</string>
+	<string name="applauncher_all">Tüm Uygulamalarınız</string>
 	
-    <string name="xda">XDA forumda Dummy Launcher</string>
-    <string name="xda_summary">Resmi uygulama konusunda geri bildirim ve hata bildirimi yapýnýz.</string>
-    <string name="github">GitHub üzerinde açýk kaynak kodu</string>
+    <string name="xda">XDA forumlarında Dummy Launcher</string>
+    <string name="xda_summary">Resmi uygulama konusunda geri bildirim ve hata bildirimi yapınız.</string>
+    <string name="github">GitHub üzerinde açık kaynak kodu</string>
     <string name="github_summary">Yeni özellikler kodlayabilir veya çeviri yapabilirsiniz.</string>
-    <string name="paypal">Paypal ile Baðýþ Yapýnýz</string>
-    <string name="paypal_summary">PayPal baðýþý herhangi bir güncelleþtirme veya iyileþtirmeler saðlamaz, sadece geliþtiricinin çalýþmalarýný destekler. Uygulama baðýþ yapýlmasada ücretsiz kalacaktýr.</string>
+    <string name="paypal">Paypal ile Bağıış Yapınız</string>
+    <string name="paypal_summary">PayPal bağışı herhangi bir güncelleştirme veya iyileştirmeler sağlamaz, sadece geliştiricinin çalışmalarını destekler. Uygulama bağış yapılmasada ücretsiz kalacaktır.</string>
     <string name="settings_title">Ayarlar</string>
-    <string name="settings_defaults_title">Varsayýlan Ayarlar</string>
-    <string name="settings_defaults_summary">Eski ana ekran uygulamanýza dönmek için ayarlarý sýfýrlar.</string>
+    <string name="settings_defaults_title">Varsayılan Ayarlar</string>
+    <string name="settings_defaults_summary">Eski ana ekran uygulamanıza dönmek için ayarları sıfırlar.</string>
 </resources>
