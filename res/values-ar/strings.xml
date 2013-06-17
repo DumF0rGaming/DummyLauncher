@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dummy Launcher</string>
+    <string name="action_settings">الاعدادات</string>
+    <string name="hello_world">مرحبا بك الى عالمنا</string>
+    <string name="title_about">Dummy مشغل</string>
+
+  <string name="error_launch_app">غير قابل لتشغيل هذا البرنامج</string>
+	<string name="error_more_themes">تم اكتشاف اكثر من واجهة و سنقوم باختيارها عشوائياز الرغاء الغاء الباقي</string>
+   
+	<string name="launcher_welcome">اهلا بك الى الاندرويد</string>
+	<string name="launcher_search">ابحث في جوجل</string>
+	<string name="launcher_common">البرامج العامة</string>
+	<string name="launcher_google_apps">تطبيقات جوجل</string>
+	<string name="launcher_all_apps">جميع التطبيقات</string>
+	<string name="launcher_comm">التواصل</string>
+	<string name="launcher_games">العاب</string>
+
+	<string name="applauncher_all">جميع التطبيقات</string>
+
+    <string name="xda">مشغل Dummy على xda</string>
+    <string name="xda_summary">التعليق و ابداء الرأي و جميع المشاكل عند الموضوع الرئيسي</string>
+    <string name="github">مصدر مفتوح على GitHub</string>
+    <string name="github_summary">يمكنك كتابة خاصية جديدة او الترجمة الى لغتك</string>
+    <string name="paypal">تبرع عبر Paypal</string>
+    <string name="paypal_summary">التبرع لا يضمن اي تحسين انما يعبر فقط عن دعمك للمطور</string>
+    <string name="settings_title">الاعدادات</string>
+    <string name="settings_defaults_title">اعادة التطبيق للحالة الاصلية</string>
+    <string name="settings_defaults_summary">اضغط عاى زر المنزل للعودة للمشغل السابق</string>
+</resources>
