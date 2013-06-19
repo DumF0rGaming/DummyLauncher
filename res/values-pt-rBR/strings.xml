@@ -3,10 +3,11 @@
 
     <string name="app_name">Dummy Launcher</string>
     <string name="action_settings">Configurações</string>
-    <string name="hello_world">Ola Mundo!</string>
+    <string name="hello_world">Olá Mundo!</string>
     <string name="title_about">Dummy Launcher</string>
-
-  <string name="error_launch_app">Não foi possível abrir o aplicativo</string>
+    
+    	<string name="error_launch_app">Não foi possível abrir o aplicativo</string>
+    	<string name="error_more_themes">Foi encontrado mais de um tema e um deles foi escolhido aleatoriamente. Desinstale o ohtro tema.</string>
    
 	<string name="launcher_welcome">Bem vindo ao Android</string>
 	<string name="launcher_search">Procurar no Google</string>
@@ -19,7 +20,7 @@
 	<string name="applauncher_all">Todos seus aplicativos</string>
 
     <string name="xda">Dummy Launcher no XDA</string>
-    <string name="xda_summary">Give Feedback and report bugs at the official topic.</string>
+    <string name="xda_summary">Dê sua opinião e notifique erros no tópico oficial.</string>
     <string name="github">Código aberto no GitHub</string>
     <string name="github_summary">Você pode codificar algo novo ou traduzir o aplicativo.</string>
     <string name="paypal">Doações via Paypal</string>
