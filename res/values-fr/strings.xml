@@ -7,7 +7,7 @@
     <string name="title_about">Dummy Launcher</string>
 
 <string name="error_launch_app">Impossible de lancer cette app</string>
-<string name="error_more_themes">Plus d'un thème détecté, un a été choisi au hasard. Désistallez les autres thèmes.</string>
+<string name="error_more_themes">Plus d'un thème détecté, un a été choisi au hasard. Désinstallez les autres thèmes.</string>
    
 <string name="launcher_welcome">Bienvenue sur Android</string>
 <string name="launcher_search">Rechercher sur Google</string>
@@ -20,7 +20,7 @@
 <string name="applauncher_all">Toutes les Apps</string>
 
     <string name="xda">Dummy Launcher sur XDA</string>
-    <string name="xda_summary">Donnez votre avis et reporter des bugs sur le sujet officiel.</string>
+    <string name="xda_summary">Donnez votre avis et reportez des bugs sur le sujet officiel.</string>
     <string name="github">Open Source sur GitHub</string>
     <string name="github_summary">Vous pouvez ajouter une nouvelle fonctionnalité ou traduire l'application.</string>
     <string name="paypal">Donations via Paypal</string>
