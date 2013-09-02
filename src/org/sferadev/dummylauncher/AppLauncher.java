@@ -363,7 +363,7 @@ public class AppLauncher extends ListActivity{
 			startActivity(startApp);
 		}
 		catch (Exception e) {
-			Context context = getApplicationContext();
+		Context context = getApplicationContext();
     		int duration = Toast.LENGTH_SHORT;
     		Toast toast = Toast.makeText(context, R.string.error_launch_app, duration);
     		toast.show();
